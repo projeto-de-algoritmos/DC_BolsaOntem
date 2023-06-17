@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de uso do Axios</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <H1> ALgo</H1>
+  <script>
+    axios.get('http://127.0.0.1:9944/')
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
+    "watch": "npx tsc --project tsconfig.json",
+    "dev": "run-p watch browsersync",
+    "compile": "npx tsc",
+    "clean": "npx rimraf public/js/**/*",
+    "build": "run-s clean compile"
+  },
+  "author": "Rodrigo Balbino",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "browser-sync": "^2.29.3",
+    "jest": "^29.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
