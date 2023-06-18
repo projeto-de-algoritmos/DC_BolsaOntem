@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../../assets/bolsa.jpg);
+  background-size: cover;
+  margin-right: 0;
+}
+
+.guys {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-position: center;
+  background-image: url(../../assets/RA.png);
+  background-repeat: no-repeat;
+}
+
+.button {
+  background: linear-gradient(to right, #4CAF50, #2E8B57);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgb(9, 9, 9);
+  padding: 20px 40px; /* Reduzido o tamanho do padding para melhorar a responsividade */
+  border-radius: 25px;
+  align-items: center;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px; /* Reduzido o tamanho da fonte para melhorar a responsividade */
+  margin: 30px; /* Reduzido o espaçamento para melhorar a responsividade */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+
+.button span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 16px 32px;
+    font-size: 14px;
+    margin: 20px;
+  }
+}
