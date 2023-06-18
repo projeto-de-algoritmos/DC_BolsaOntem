@@ -1,3 +1,4 @@
 lxml
 flask==2.3.2
 pandas
+flask_cors==3.0.10
