@@ -9,8 +9,12 @@ function AskForValue() {
 
   const fetchData = async () => {
     try {
+      localStorage.removeItem('response');
       const response = await axios.get(`http://127.0.0.1:9944/info/${investimento}`);
-      console.log(response.data);
+      await new Promise((resolve) => {
+        localStorage.setItem('response', JSON.stringify(response.data));
+        resolve();
+      });
     } catch (error) {
       console.error(error);
     }
