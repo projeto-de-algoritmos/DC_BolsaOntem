@@ -38,4 +38,4 @@ def informacao(valor_desejado):
     codigo = row['Código'].values[0]
     nome = row['Nome'].values[0]
     valor = row['Última (R$)'].values[0]
-    return {"Código": codigo, "Nome": nome, "Valor": valor}
+    return {"Codigo": codigo, "Nome": nome, "Valor": valor}
