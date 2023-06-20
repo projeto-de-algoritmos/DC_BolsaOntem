@@ -11,10 +11,8 @@ function AskForValue() {
     try {
       localStorage.removeItem('response');
       const response = await axios.get(`http://127.0.0.1:9944/info/${investimento}`);
-      await new Promise((resolve) => {
-        localStorage.setItem('response', JSON.stringify(response.data));
-        resolve();
-      });
+      localStorage.setItem('response', JSON.stringify(response.data));
+      navigateToPage(); // Navega para a página após a conclusão bem-sucedida da solicitação
     } catch (error) {
       console.error(error);
     }
@@ -39,7 +37,7 @@ function AskForValue() {
           value={investimento}
           onChange={handleInputChange}
         />
-        <button className="button" onClick={() => { fetchData(); navigateToPage(); }}>  <span>Buscar investimentos</span> </button>
+        <button className="button" onClick={fetchData}>  <span>Buscar investimentos</span> </button>
       </div>
     </div>
   );
