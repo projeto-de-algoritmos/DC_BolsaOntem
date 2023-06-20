@@ -34,9 +34,15 @@ WORK IN PROGRESS
 **Framework**: ReactJS & Flask<br>
 
 ## Uso
-WORK IN PROGRESS
+
+Para a execução do projeto, vá até sua raíz e use o comando:
+```
+$   make project
+```
+Assim o tanto o frontend, quanto o backend do projeto serão executados e será possível acessar a aplicação pelo localhost em seu navegador.
 
 <!--
+
 Para instalar os pacotes necessários
 ```
 pip3 install -r requirements.txt
