@@ -99,6 +99,10 @@ ul {
   padding: 10px;
 }
 
+.acoes-item.duplicate {
+  background-color: black;
+  color: white;
+}
 /* Add any additional styles you need */
 
 
