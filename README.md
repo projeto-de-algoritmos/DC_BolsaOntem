@@ -27,7 +27,9 @@ Temas:
 Este projeto é uma aplicação web desenvolvida usando Flask e ReactJS para fornecer informações sobre os valores das ações da bolsa de valores. A aplicação permite que os usuários insiram o valor que desejam investir e retorna as 5 ações com os valores mais próximos ao valor proposto.
 
 ## Screenshots
-WORK IN PROGRESS
+![image](https://github.com/projeto-de-algoritmos/DC_BolsaOntem/assets/54644626/c77a9f50-cae4-4dd4-85a5-29c7fe7b2bc2)
+![image](https://github.com/projeto-de-algoritmos/DC_BolsaOntem/assets/54644626/ff453329-c9ff-4625-b4c6-f9e2c07ae354)
+![image](https://github.com/projeto-de-algoritmos/DC_BolsaOntem/assets/54644626/c28b7c8b-f6a7-4f08-aa84-22aeb06de2ad)
 
 ## Instalação
 **Linguagem**: Python 3.10 & Javascript<br>
