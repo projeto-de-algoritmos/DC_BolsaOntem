@@ -40,9 +40,9 @@ def informacao(valor_desejado):
     valores_proximos = lista[max(0, posicao-2):posicao+3]
 
     while len(valores_proximos) < 4:
-        if posicao - 2 < 0:  
+        if posicao - 2 < 0:
             valores_proximos.append(lista[posicao+len(valores_proximos)+1])
-        elif posicao + len(valores_proximos) >= len(lista): 
+        elif posicao + len(valores_proximos) >= len(lista):
             valores_proximos.insert(0, lista[posicao-len(valores_proximos)-1])
         else:
             valores_proximos.append(lista[posicao+len(valores_proximos)+1])
@@ -57,4 +57,5 @@ def informacao(valor_desejado):
         valor = row['Última (R$)']
         data.append({"Codigo": codigo, "Nome": nome, "Valor": valor})
 
+    data.append({"Codigo": None, "Nome": None, "Valor": closest_price})
     return data
